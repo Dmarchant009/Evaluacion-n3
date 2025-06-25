@@ -58,8 +58,18 @@ se uso en el Main se crea una instancia de AdaptadorConsolaGimnasio que es usada
 
 ![Image](https://github.com/user-attachments/assets/3a86b87e-f0b7-48c8-80c0-0c107b7510fb)
 
+## Instrucciones de compilación y ejecución.
+1.- Descarga el proyecto que esta en la carpeta /src
+busca el archivo patrones.java y descargalo 
+2.-Abre una terminal o consola y navega a la carpeta donde está el archivo patrones.java.
+Ejecuta el siguiente comando para compilar:
 
-
+bash
+Copiar
+Editar
+javac patrones.java
+ejecuta el programa con el comando 
+java patrones
 
 
 
