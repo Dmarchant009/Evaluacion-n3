@@ -1,6 +1,7 @@
 # Evaluacion-n3
 # Sistema de control de rutinas y asistencia
  ## Breve descripcion del sistema 
+es un sistema de gestión básica para gimnasios que permite llevar el control de asistencias de los clientes y asignar rutinas de entrenamiento personalizadas. A través de una interfaz por consola, los usuarios pueden registrar su asistencia diaria, solicitar una rutina de ejercicios basada en una plantilla predefinida y revisar tanto el historial de visitas como las rutinas asignadas.
 
 El sistema integra patrones de diseño como Prototype, Singleton, Adapter e Iterator para estructurar el código de forma limpia y eficiente.
 
