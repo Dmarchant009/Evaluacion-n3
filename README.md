@@ -38,9 +38,24 @@ a instancia de GestorGimnasio es utilizada en toda la aplicación, especialmente
 # ¿Por que se uso?
 Se utilizó el patrón Iterator para permitir recorrer de manera controlada y ordenada el historial de asistencias del gimnasio, sin exponer directamente cómo están almacenadas internamente
 
+# ¿Como se uso?
+Se creó la clase AsistenciaIterator, que implementa la interfaz Iterator, esta clase recibe la lista de asistencias y permite recorrerla usando los métodos hasNext() y next()
+# ¿Donde se uso?
+El iterador es utilizado dentro del AdaptadorConsolaGimnasio cuando se ejecuta la opción "Ver historial de asistencias". Así, el sistema muestra cada asistencia una por una.
 
+![Image](https://github.com/user-attachments/assets/5b81392f-51ef-4318-a51b-eefa473cf1cf)
 
+## Clase AdaptadorConsolaGimnasio (patron estructural Adapter)
+# ¿por que se uso?
+para desacoplar la lógica del sistema (gestión de rutinas y asistencias) de la forma en que el usuario interactúa con él (mediante consola). Esto permite que en el futuro se puedan implementar otras formas de interacción como una app grafica o una web.
 
+#¿como se uso?
+Se definió la interfaz CanalInterfaz con las operaciones principales del sistema: registrar asistencia, solicitar rutina, mostrar historial y ver rutinas. Luego, se creó la clase AdaptadorConsolaGimnasio, que implementa esa interfaz y actúa como un adaptador entre el usuario y el sistema. Dentro de esta clase se traduce cada acción del usuario en una llamada al GestorGimnasio.
+# ¿Donde se uso?
+se uso en el Main se crea una instancia de AdaptadorConsolaGimnasio que es usada como el canal principal de interacción con el sistema
+![Image](https://github.com/user-attachments/assets/e0852ed2-92d8-430b-a056-23cc7f832341)
+
+![Image](https://github.com/user-attachments/assets/3a86b87e-f0b7-48c8-80c0-0c107b7510fb)
 
 
 
